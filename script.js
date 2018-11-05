@@ -33,3 +33,4 @@ shooter.shootTarget = (_$target) =>
 }
 
 shooter.addTarget()
+/* salyt vieux cul */
