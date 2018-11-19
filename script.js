@@ -1,4 +1,4 @@
-const shooter = {}
+clearconst shooter = {}
 
 shooter.$container = document.querySelector('.shooter')
 shooter.$start = shooter.$container.querySelector('.start')

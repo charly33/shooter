@@ -5,7 +5,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle at center, #7f8c8d, #2c3e50);
+    background: linear-gradient(to right, #000000, #434343);
     overflow: hidden;
 }
 .shooter .start
