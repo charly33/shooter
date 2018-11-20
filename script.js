@@ -59,7 +59,6 @@ shooter.end = () =>
 shooter.tick = ()=>
 {
     shooter.secondsLeft--
-    console.log(shooter.secondsLeft)
 
     if(shooter.secondsLeft === 0)
     {
@@ -86,11 +85,18 @@ shooter.addTarget = () =>
     $target.style.top = `${Math.random()*100}%`
     $target.style.left = `${Math.random()*100}%`
     shooter.$targets.appendChild($target)
+    const touch = 0
     
     $target.addEventListener('mouseenter', () =>
     {
         shooter.shootTarget($target)
     })
+    $target.addEventListener('touchstart', () =>
+    {
+        shooter.shootTarget($target)
+    })
+    
+    console.log(touch)
 }
 shooter.shootTarget = (_$target) =>
 {
